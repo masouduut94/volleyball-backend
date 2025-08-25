@@ -19,7 +19,7 @@ from sqlalchemy import Column, Integer, String, Text, JSON, Boolean, ForeignKey,
 from sqlalchemy.sql import func
 from sqlalchemy.orm import Mapped, relationship, declared_attr
 
-from db.engine import Base, get_db
+from ..db.engine import Base, get_db
 
 
 class Team(Base):

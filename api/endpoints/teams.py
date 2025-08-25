@@ -2,10 +2,10 @@ from fastapi import HTTPException, status, APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing_extensions import List
 
-from crud.base import CRUDBase
-from db.engine import get_db
-from models.models import Team
-from schemas.teams import TeamBaseSchema, TeamCreateSchema
+from ...crud.base import CRUDBase
+from ...db.engine import get_db
+from ...models.models import Team
+from ...schemas.teams import TeamBaseSchema, TeamCreateSchema
 
 router = APIRouter()
 

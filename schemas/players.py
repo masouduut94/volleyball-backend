@@ -1,7 +1,7 @@
 from typing import Optional
 
 from pydantic import BaseModel, Field, ConfigDict
-from enums.enums import VolleyBallPositions as VBP
+from ..enums.enums import VolleyBallPositions as VBP
 
 
 # Shared properties

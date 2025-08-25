@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session
 from loguru import logger
 import sys
-from core.config import settings
+from ..core.config import settings
 
 logger.add(sink=sys.stderr, format="{time:MMMM D, YYYY > HH:mm:ss!UTC} | {level} | {message}", serialize=True)
 db_uri = settings.get_db_uri()

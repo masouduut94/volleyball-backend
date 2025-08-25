@@ -2,10 +2,10 @@ from sqlalchemy.orm import Session
 from typing_extensions import List
 from fastapi import Depends, HTTPException, status, APIRouter
 
-from db.engine import get_db
-from crud.base import CRUDBase
-from models.models import Camera
-from schemas.cameras import CameraBaseSchema
+from ...db.engine import get_db
+from ...crud.base import CRUDBase
+from ...models.models import Camera
+from ...schemas.cameras import CameraBaseSchema
 
 # from fastapi.encoders import jsonable_encoder
 router = APIRouter()
